@@ -1,0 +1,56 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Estilo do submenu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 12px 16px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a:hover {
+    background-color: #555;
+}
